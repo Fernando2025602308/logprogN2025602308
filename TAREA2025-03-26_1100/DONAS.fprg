@@ -4,9 +4,9 @@
         <attribute name="name" value="DONAS"/>
         <attribute name="authors" value="ferna"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-03-23 06:49:54 p. m."/>
+        <attribute name="saved" value="2025-03-23 07:22:48 p. m."/>
         <attribute name="created" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDMtMjM7MDI6MDU6NTEgcC4gbS47MzAzNw=="/>
-        <attribute name="edited" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDMtMjM7MDY6NDk6NTQgcC4gbS47MTszMTYw"/>
+        <attribute name="edited" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDMtMjM7MDc6MjI6NDggcC4gbS47MjszMTU2"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -26,9 +26,6 @@
                     <output expression="total" newline="True"/>
                 </then>
                 <else>
-                    <assign variable="total1" expression="NUMD*DONAS"/>
-                    <output expression="&quot;EL TOTAL ES DE&quot;" newline="True"/>
-                    <output expression="total1" newline="True"/>
                     <if expression="NUMD &gt; 49">
                         <then>
                             <assign variable="total2" expression="NUMD*DONAS-DESC2"/>
@@ -37,7 +34,11 @@
                             <output expression="&quot;EL TOTAL ES&quot;" newline="True"/>
                             <output expression="total2" newline="True"/>
                         </then>
-                        <else/>
+                        <else>
+                            <assign variable="total1" expression="NUMD*DONAS"/>
+                            <output expression="&quot;EL TOTAL ES DE&quot;" newline="True"/>
+                            <output expression="total1" newline="True"/>
+                        </else>
                     </if>
                 </else>
             </if>
