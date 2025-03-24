@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="A&#209;OS"/>
+        <attribute name="authors" value="ferna"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-23 07:13:51 p. m."/>
+        <attribute name="created" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDMtMjM7MDY6NTA6MDIgcC4gbS47MzAzNw=="/>
+        <attribute name="edited" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDMtMjM7MDc6MTM6NTEgcC4gbS47MTszMTQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A&#209;O" type="Integer" array="False" size=""/>
+            <input variable="A&#209;O"/>
+            <if expression="A&#209;O %400==0">
+                <then>
+                    <output expression="&quot;SI ES BISIESTO&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="A&#209;O %4==0">
+                        <then>
+                            <if expression="A&#209;O %100==0">
+                                <then>
+                                    <output expression="&quot;EL A&#209;O NO ES BISIESTO&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;EL A&#209;O ES BISIESTO&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;EL A&#209;O NO ES BISIESTO&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

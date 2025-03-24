@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="DONAS"/>
+        <attribute name="authors" value="ferna"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-23 06:49:54 p. m."/>
+        <attribute name="created" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDMtMjM7MDI6MDU6NTEgcC4gbS47MzAzNw=="/>
+        <attribute name="edited" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDMtMjM7MDY6NDk6NTQgcC4gbS47MTszMTYw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="DONAS, NUMD, DESC1, DESC2" type="Integer" array="False" size=""/>
+            <declare name="total1, total2, total3, total" type="Real" array="False" size=""/>
+            <assign variable="DONAS" expression="10"/>
+            <input variable="NUMD"/>
+            <assign variable="DESC1" expression="NUMD*1"/>
+            <assign variable="DESC2" expression="NUMD*2"/>
+            <if expression="NUMD &gt;29 AND NUMD &lt;50">
+                <then>
+                    <assign variable="total" expression="NUMD*DONAS-DESC1"/>
+                    <output expression="&quot;EL DESCEUNTO ES DE&quot;" newline="True"/>
+                    <output expression="DESC1" newline="True"/>
+                    <output expression="&quot;EL TOTAL ES&quot;" newline="True"/>
+                    <output expression="total" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="total1" expression="NUMD*DONAS"/>
+                    <output expression="&quot;EL TOTAL ES DE&quot;" newline="True"/>
+                    <output expression="total1" newline="True"/>
+                    <if expression="NUMD &gt; 49">
+                        <then>
+                            <assign variable="total2" expression="NUMD*DONAS-DESC2"/>
+                            <output expression="&quot;EL DESCEUNTO ES DE&quot;" newline="True"/>
+                            <output expression="DESC2" newline="True"/>
+                            <output expression="&quot;EL TOTAL ES&quot;" newline="True"/>
+                            <output expression="total2" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
