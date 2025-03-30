@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="DONAS"/>
+        <attribute name="authors" value="ferna"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-27 07:35:52 p. m."/>
+        <attribute name="created" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDMtMjM7MDI6MDU6NTEgcC4gbS47MzAzNw=="/>
+        <attribute name="edited" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDMtMjc7MDc6MzU6NTIgcC4gbS47NDszMTYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="EDAD" type="Integer" array="False" size=""/>
+            <output expression="&quot;INGRESE SU EDAD&quot;" newline="True"/>
+            <input variable="EDAD"/>
+            <if expression="EDAD &gt;=19">
+                <then>
+                    <output expression="&quot;DEBE DE PAGAR 500&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="EDAD &gt;= 4 AND EDAD &lt;=18">
+                        <then>
+                            <output expression="&quot;DEBE DE PAGAR 200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="EDAD &lt;=4">
+                                <then>
+                                    <output expression="&quot;ES GRATIS&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;EDAD ILOGICA&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
