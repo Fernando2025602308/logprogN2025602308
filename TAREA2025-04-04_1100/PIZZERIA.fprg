@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PIZZERIA"/>
+        <attribute name="authors" value="ferna"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-03 08:08:45 p. m."/>
+        <attribute name="created" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDQtMDM7MDc6NTI6MDMgcC4gbS47MzA0MA=="/>
+        <attribute name="edited" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDQtMDM7MDg6MDg6NDUgcC4gbS47MTszMTU2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="piz, veg, car" type="Integer" array="False" size=""/>
+            <output expression="&quot;INGRESE 1 SI QUIERE UNA PIZZA VEGETARIANA Y 2 SI QUIERE UNA PIZZA TRADICIONAL&quot;" newline="True"/>
+            <input variable="piz"/>
+            <if expression="piz =1">
+                <then>
+                    <output expression="&quot;ESCOJA SOLAMENTE UN INGREDIENTE PIMIENTO O TOFU&quot;" newline="True"/>
+                    <output expression="&quot;PIMIENTO 1 O TOFU 2&quot;" newline="True"/>
+                    <input variable="veg"/>
+                    <if expression="veg ==1">
+                        <then>
+                            <output expression="&quot;SU PIZZA ES VEGETARIANA Y LOS INGREDIENTES SON MOZZARELLA, TOAMTE Y PIMIENTO&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;SU PIZZA ES VEGETARIANA Y LOS INGREDIENTES SON MOZZARELLA, TOAMTE Y TOFU&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;ESCOJA SOLAMENTE UN INGREDIENTE PEPERONI, JAMON O SALMON&quot;" newline="True"/>
+                    <output expression="&quot;PEPERONI 1, JAMON 2 O SALMON 3&quot;" newline="True"/>
+                    <input variable="car"/>
+                    <if expression="car=1">
+                        <then>
+                            <output expression="&quot;SU PIZZA ES TRADICIONAL Y LOS INGREDIENTES SON MOZZARELLA, TOMATE Y PEPERONI&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="car=2">
+                                <then>
+                                    <output expression="&quot;SU PIZZA ES TRADICIONAL Y LOS INGREDIENTES SON MOZZARELLA, TOMATE Y JAMON&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="car=3">
+                                        <then>
+                                            <output expression="&quot;SU PIZZA ES TRADICIONAL Y LOS INGREDIENTES SON MOZZARELLA, TOMATE Y SALMON&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;OPCION INVALIDA&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
