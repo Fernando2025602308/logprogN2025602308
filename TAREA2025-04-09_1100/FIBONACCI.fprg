@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="FIBONACCI"/>
+        <attribute name="authors" value="ferna"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 09:28:02 p. m."/>
+        <attribute name="created" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDQtMDg7MDg6MzI6MTUgcC4gbS47MzA0Nw=="/>
+        <attribute name="edited" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDQtMDg7MDg6NDg6NDQgcC4gbS47MTtmZXJuYTtERVNLVE9QLTFJN0RGU0Y7MjAyNS0wNC0wODswODoxODoyMCBwLiBtLjs2Mjcw"/>
+        <attribute name="edited" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDQtMDg7MDk6Mjg6MDIgcC4gbS47MTszMTU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="FIB, A, B, FIBN" type="Integer" array="False" size=""/>
+            <output expression="&quot;SERIE FIBONACCI&quot;" newline="True"/>
+            <assign variable="FIBN" expression="64"/>
+            <assign variable="A" expression="0"/>
+            <assign variable="B" expression="1"/>
+            <while expression="FIBN &gt;=64">
+                <assign variable="FIB" expression="A+B"/>
+                <assign variable="A" expression="B"/>
+                <assign variable="B" expression="FIB"/>
+                <output expression="FIB" newline="False"/>
+                <output expression="&quot;,&quot;" newline="False"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="FACTORIAL"/>
+        <attribute name="authors" value="ferna"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 08:32:08 p. m."/>
+        <attribute name="created" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDQtMDg7MDg6MTg6MjAgcC4gbS47MzA0Nw=="/>
+        <attribute name="edited" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDQtMDg7MDg6MzI6MDggcC4gbS47MTszMTU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, fac" type="Integer" array="False" size=""/>
+            <assign variable="fac" expression="1"/>
+            <output expression="&quot;INTRODUSCA EL NUMERO QUE QUIERE EN FACTORIAL&quot;" newline="True"/>
+            <input variable="num"/>
+            <while expression="num &gt; 1">
+                <assign variable="fac" expression="fac*num"/>
+                <assign variable="num" expression="num-1"/>
+            </while>
+            <output expression="fac" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
