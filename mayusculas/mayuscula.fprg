@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="mayuscula"/>
+        <attribute name="authors" value="ferna"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-06-01 02:29:04 p. m."/>
+        <attribute name="created" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDYtMDE7MDI6MjA6MTMgcC4gbS47MzAzMQ=="/>
+        <attribute name="edited" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDYtMDE7MDI6Mjk6MDQgcC4gbS47MTszMTQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cad, tra" type="String" array="False" size=""/>
+            <declare name="tam, i, cod" type="Integer" array="False" size=""/>
+            <input variable="cad"/>
+            <assign variable="tam" expression="len(cad)"/>
+            <assign variable="tra" expression="&quot;&quot;"/>
+            <for variable="i" start="0" end="tam-1" direction="inc" step="1">
+                <assign variable="cod" expression="ToCode(Char(cad,i))"/>
+                <assign variable="tra" expression="tra &amp; ToChar(cod-32)"/>
+            </for>
+            <output expression="tra" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

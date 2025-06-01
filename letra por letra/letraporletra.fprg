@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="letraporletra"/>
+        <attribute name="authors" value="ferna"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-06-01 02:17:15 p. m."/>
+        <attribute name="created" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDYtMDE7MDI6MTQ6MTUgcC4gbS47MzAzNg=="/>
+        <attribute name="edited" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDYtMDE7MDI6MTc6MTUgcC4gbS47MTszMTQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cad" type="String" array="False" size=""/>
+            <input variable="cad"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="len(cad)-1" direction="inc" step="1">
+                <output expression="char(cad,i)" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
